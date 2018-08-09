@@ -8,40 +8,45 @@
     <title>Address Book</title>
   </head>
   <body>
-    <div class="container entry">
-      <h1>New Contact</h1>
-      <form id="newcontact">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input id="name" class="form-control" type="text" placeholder="last, first">
+    <div class="container rounded book">
+      <div class="row">
+        <div class="col-md-6 rounded" id="left">
+          <h1>New Contact</h1>
+          <form id="newcontact">
+            <div class="form-group">
+              <label for="firstname">First Name</label>
+              <input id="firstname" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+              <label for="lastname">Last Name</label>
+              <input id="lastname" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input id="phone" class="form-control" type="tel" name="phone" placeholder="xxx-xxx-xxxx">
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input id="email" class="form-control" type="email" placeholder="email@domain.com">
+            </div>
+            <div class="form-group">
+              <label for="address1">Address Line 1</label>
+              <input id="address1" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+              <label for="address2">Address Line 2</label>
+              <input id="address2" class="form-control" type="text">
+            </div>
+            <button type="submit" class="btn btn-success">Add</button>
+          </form>
         </div>
-        <div class="form-group">
-          <label for="phone">Phone Number</label>
-          <input id="phone" class="form-control" type="tel" name="phone" placeholder="xxx-xxx-xxxx">
-        </div>
-        <div class="form-group">
-          <label for="email">Email Address</label>
-          <input id="email" class="form-control" type="email" placeholder="email@domain.com">
-        </div>
-        <div class="form-group">
-          <label for="address1">Address Line 1</label>
-          <input id="address1" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-          <label for="address2">Address Line 2</label>
-          <input id="address2" class="form-control" type="text">
-        </div>
-        <button type="submit" class="btn btn-success">Add</button>
-      </form>
-    </div>
 
-    <div class="container">
-      <h1>Address Book</h1>
-      <div class="addressbook">
+        <div class="col-md-6 rounded" id="right">
+          <h1 id="abheader">Address Book</h1>
+          <div class="addressbook">
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="container">
-      <h1>______</h1>
     </div>
   </body>
 </html>

@@ -1,12 +1,29 @@
-h1 {
-  margin: 50px 0 20px 0;
+.book {
+  margin-top: 25px;
+  border: 2px solid blue;
+
+}
+
+#left {
+  border: 1px solid blue;
+  padding: 25px;
+}
+
+#right {
+  border: 1px solid blue;
+  padding: 25px;
+}
+
+#abheader {
+  margin-bottom: 38px;
 }
 
 div.clickable {
-  padding: 5px;
-  background-color: lightgray;
+  padding: 10px;
+  background-color: #28a745;
   border-radius: 5px;
   box-shadow: 2px 2px 5px;
+  color: white;
 }
 
 .back {
@@ -15,5 +32,5 @@ div.clickable {
 
 .clickable {
   cursor: pointer;
-  margin: 10px 0;
+  margin-top: 10px;
 }
