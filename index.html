@@ -29,14 +29,14 @@
               <label for="email">Email Address</label>
               <input id="email" class="form-control" type="email" placeholder="email@domain.com">
             </div>
-            <div class="form-group">
+            <!-- <div class="form-group">
               <label for="address1">Address Line 1</label>
               <input id="address1" class="form-control" type="text">
             </div>
             <div class="form-group">
               <label for="address2">Address Line 2</label>
               <input id="address2" class="form-control" type="text">
-            </div>
+            </div> -->
             <button type="submit" class="btn btn-success">Add</button>
           </form>
         </div>
@@ -44,7 +44,15 @@
         <div class="col-md-6 rounded" id="right">
           <h1 id="abheader">Address Book</h1>
           <div class="addressbook">
+            <ul id="contacts">
+            </ul>
           </div>
+          <div id="show-contact">
+            <h2></h2>
+            <p>First Name: <span class="first-name"></span></p>
+            <p>Last Name: <span class="last-name"></span></p>
+            <p>Phone Number: <span class="phone-number"></span></p>
+            <p>Email Address: <span class="email-address"></span></p>
         </div>
       </div>
     </div>
