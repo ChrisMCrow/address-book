@@ -24,7 +24,7 @@ $(document).ready(function() {
 
     var newContact = new Contact(inputtedFirstName, inputtedLastName, inputtedPhoneNumber, inputtedEmail);
 
-    $("ul#contacts").append("<li><span class='contact'>" + newContact.fullName() + "</span></li>");
+    $("ul#contacts").append("<li><span class='contact clickable'>" + newContact.fullName() + "</span></li>");
 
     $(".contact").last().click(function () {
       $("#show-contact").show();
@@ -39,27 +39,5 @@ $(document).ready(function() {
     $("#lastname").val("");
     $("#phone").val("");
     $("#email").val("");
-  });
-
-
-
-  //   var contactPage =
-  //     "Name: " + $("input#firstname").val() + " " + $("input#lastname").val() + "<br>" +
-  //     "Phone Number: " + $("input#phone").val() + "<br>" +
-  //     "Email: " + $("input#email").val() + "<br>" +
-  //     "Adress: " + $("input#adress1").val() + "<br>" +
-  //     "City/State/Zip: " + $("input#address2").val();
-  //
-  //   $(".addressbook").append("<div class='clickable'>" + "</div>");
-  //   $(".clickable:last-child").append("<p>" + contactName + "</p>");
-  //   $(".clickable p:first-child").addClass("front");
-  //   $(".clickable:last-child").append("<p>" + contactPage + "</p>");
-  //   $(".clickable p:last-child").addClass("back");
-  // });
-
-  $('body').on('click', '.clickable', function () {
-  //$(".clickable").click(function() {
-    $(".contact", this).toggle();
-    $("#show-contact", this).toggle();
   });
 });
